@@ -30,8 +30,8 @@ def st_read_api_response(value):
   return fruity_vice_response
 
 #fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + "kiwi"")
-st_read_api_response(kiwi)
-streamlit.tet(fruityvice_response.json())
+st_read_api_response("kiwi")
+streamlit.text(fruityvice_response.json())
 
 # "normalize" the json 
 fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
