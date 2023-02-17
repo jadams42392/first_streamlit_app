@@ -26,7 +26,7 @@ streamlit.header('Fruityvice Fruit Advice!')
 
 import requests
 def st_read_api_response(value): fruityvice_response = requests.get(f"https://fruityvice.com/api/fruit/{value}") 
-  return fruity_vice_response;
+  return fruity_vice_response
 #fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + "kiwi"")
 st_read_api_response(kiwi)
 streamlit.tet(fruityvice_response.json())
